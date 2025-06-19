@@ -20,6 +20,7 @@ const App = () => {
      .catch((err) => {
       console.log(err);
      })
+  setWord(''); //clear search text after submit
   }
 
   // console.log(word); // see state changes
