@@ -9,7 +9,7 @@ const App = () => {
   const [word, setWord] = useState('');
   const [images, setImages] = useState([]);
 
-  console.log(images);
+  console.log(images); //see atate changes of images array
 
   const handleSearchSubmit = (e) => {
     e.preventDefault();
