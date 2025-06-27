@@ -1,12 +1,47 @@
 {
-    "editor.tabSize": 2,
-    "eslint.validate":[
+  // "editor.tabSize": 2,
+  // "files.eol": "\n",
+  // "editor.codeActionsOnSave": {
+  //   "source.fixAll.eslint": "explicit"
+  // },
+  // "eslint.validate": [
+  //   "html",
+  //   "javascript",
+  //   "javascriptreact"
+  // ],
+
+  // // Python extension modern configuration
+  // "python.defaultInterpreterPath": "api/.venv/bin/python3",
+  // "python.formatting.provider": "black",
+  // "python.formatting.blackArgs": ["--line-length", "88"],
+  // "python.linting.enabled": true,
+  // "python.linting.pylintEnabled": true,
+  // "python.linting.pycodestyleEnabled": true,
+  // "python.linting.pycodestyleArgs": [
+  //   "--max-line-length=88"
+  // ],
+  // "[python]": {
+  //   "editor.formatOnSave": true
+  // }
+  "editor.tabSize": 2,
+    "files.eol": "\n",
+    "eslint.validate": [
         "html",
         "javascript",
-        "javascriptreact"
+        "javascriptreact"       
     ],
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": "explicit"
     },
-    "python.pythonPath": "api/.venv/bin/python3"
+    "python.defaultInterpreterPath": "api/.venv/bin/python3",
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit"
+        }
+    },
+    "pylint.importStrategy": "fromEnvironment",
+    "pylint.args": [
+        "\"pylint.args\": [\"--disable=C0116\",\"--max-line-length=88\"]"
+    ]
 }
