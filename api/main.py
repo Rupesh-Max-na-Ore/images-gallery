@@ -3,6 +3,7 @@ import requests
 from flask import Flask, request
 from dotenv import load_dotenv
 from flask_cors import CORS
+from mongo_client import insert_test_document
 
 load_dotenv(dotenv_path="./.env.local")
 
@@ -21,6 +22,8 @@ CORS(app)
 
 # Debug mode ON to auto restart flask app on any code changes in main.py
 app.config["DEBUG"] = DEBUG 
+
+insert_test_document()
 
 @app.route("/new-image")
 def new_image():
