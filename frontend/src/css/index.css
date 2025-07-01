@@ -6,3 +6,17 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.author-link {
+  text-decoration: none;
+  color: #0d6efd; /* Bootstrap primary blue */
+}
+
+.author-link:visited {
+  color: #6f42c1; /* Bootstrap purple */
+}
+
+.author-link:hover {
+  color: #0a58ca; /* Darker blue on hover */
+  text-decoration: none;
+}
