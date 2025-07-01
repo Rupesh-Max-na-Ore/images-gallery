@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, Button } from 'react-bootstrap';
 
 const ImageCard = ({ image, deleteImage, saveImage }) => {
-  const authorName = image.user?.name || 'No author name';
+  const authorName = image.user?.name || ' Author Unknown ';
   const authorPortfolioURL = image.user?.portfolio_url;
 
   return (
